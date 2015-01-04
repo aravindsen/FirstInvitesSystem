@@ -1,0 +1,41 @@
+apply plugin: 'application'
+apply plugin: 'eclipse'
+apply plugin: 'groovy'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+version = '1.0'
+
+//create a single Jar with all dependencies
+task fatJar(type: Jar, dependsOn: [':compileJava', ':compileGroovy']) {
+    baseName = project.name + '-all'
+    from {
+        configurations.compile.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+    with jar
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.7'
+    compile 'org.apache.hadoop:hadoop-common:2.5.0'
+    compile 'org.apache.hadoop:hadoop-mapreduce-client-core:2.5.0'
+}
+
+test {
+    systemProperties 'property': 'value'
+}
+
+uploadArchives {
+    repositories {
+       flatDir {
+           dirs 'repos'
+       }
+    }
+}
+

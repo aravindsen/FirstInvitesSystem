@@ -1,0 +1,104 @@
+Output
+No of users in yelp dataset: 252898
+
+Category Keywords for B: ["food", "restaurant", "breakfast", "lunch", "dining", "dessert"]
+
+No of users who have reviewed at least a business of B’s category (restaurants): 192225
+
+File with filtered users who reviewed businesses from restaurant category and their reviews count: yelp_restaurant_lovers_list.txt
+
+File with shrunken adjacency list graph of friends with only above users: yelp_filtered_graph_foodie.txt
+
+File with triangle for such users: triangles.txt
+
+Top 10 users (in terms of cluster coeffs breaking ties with degree, may be review count as a third parameter would have been better):
+user_id					name				review_count
+-0MwH67T9Hr4skmWjut_rw		kelvin			5
+0JH9TryxldCmaRdg9npn4g		Aaron				18
+KLIgcDSCque_hMrtjnUcow		elizabeth			99
+5-lseWos744OZX-h4tNqTA		Bella				35
+TDc3DjIxnP5FBOMBEtMHfQ		Hapi				6
+HUsX6ZzpzHuiUc7UOcCtmA		Ellen				18
+-PdShZWVxInF2NXCUIq9Kw		Chante 			2
+3NlrLWgEsZUyPoCItSxnRw		Genny				8
+CgpmyGhK8fendPnh8PgO0w		Tom				86
+1OzWDM03EEimwJEE9lueoQ		David				39
+ApOSzkrrEza21WGcgLXkxQ		Irene				12
+
+Top 10 users (in terms of degree)
+user_id 					name				degree
+nKoB5cWZHXYUIUcQsUDogA		Kimquyen			2672
+WmAyExqSWoiYZ5XEqpk_Uw		Philip			2442
+fczQCSmaWF78toLEmb0Zsw		Gabi				2432
+spJUPXI7QaIctU0FO5c42w		Katie				2310
+J3rNWRLRuZJ_0xsJalIhlA		Hazel				2007
+saiZmxzBIowJbMgPBW1Now		Carol				1993
+kGgAARL2UmvCcTRfiscjug		J				1833
+SfiNyNLmW7alXejl-m_iYw		Daniel			1771
+w6Vv-kldGpmvSGqXvTbAdQ		Connie			1745
+gBID8jIwsQIE5W_Zr0Vhjg		Abby				1730
+
+Expectation of spread (l=100):
+Triangle Counting:
+Expected at step 1: 371
+Expected at step 2: 2222.0167
+Expected at step 3: 36908.936
+Expected at step 4: 68382.317
+Expected at step 5: 72714.228
+Expected at step 6: 73227.356
+Expected at step 7: 73275.293
+Expected at step 8: 73282.506
+Expected at step 9: 73282.950
+
+High Degree:
+Expected at step 1: 1063.436
+Expected at step 2: 42323.393
+Expected at step 3: 68021.918
+Expected at step 4: 71402.899
+Expected at step 5: 71779.351
+Expected at step 6: 71805.387
+Expected at step 7: 71810.189
+Expected at step 8: 71810.637
+
+Expectation of spread (l=500):
+Triangle Counting:
+Expected at step 1: 1457
+Expected at step 2: 6958.108
+Expected at step 3: 51995.982
+Expected at step 4: 71578.772
+Expected at step 5: 73935.497
+Expected at step 6: 74185.65
+Expected at step 7: 74202.402
+Expected at step 8: 74207.325
+Expected at step 9: 74207.769
+
+High Degree:
+Expected at step 1: 4347.117
+Expected at step 2: 51517.337
+Expected at step 3: 70169.95
+Expected at step 4: 72495.085
+Expected at step 5: 72753.685
+Expected at step 6: 72771.753
+Expected at step 7: 72775.609
+Expected at step 8: 72776.053
+
+Expectation of spread (l=1000):
+Triangle Counting:
+Expected at step 1: 2723
+Expected at step 2: 11713.403
+Expected at step 3: 57579.456
+Expected at step 4: 72997.949
+Expected at step 5: 74826.301
+Expected at step 6: 75014.482
+Expected at step 7: 75026.107
+Expected at step 8: 75026.713
+
+High Degree:
+Expected at step 1: 7144.294
+Expected at step 2: 55407.271
+Expected at step 3: 71090.192
+Expected at step 4: 72993.156
+Expected at step 5: 73204.067
+Expected at step 6: 73218.025
+Expected at step 7: 73221.975
+Expected at step 8: 73222.419
